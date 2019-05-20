@@ -1,0 +1,7 @@
+<h1>Thanks for adding a ranking</h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content, placeholder: 'Name'%>
+  <%= f.input :rating, placeholder: 'Rating between 0 and 5' %>
+  <%= f.submit "add a ranking", class: "btn btn-primary" %>
+<% end %>
+
